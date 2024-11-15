@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    label {
+        @apply h-6 relative inline-block;
+    }
+
+    [type="checkbox"] {
+        @apply w-11 h-0 cursor-pointer inline-block;
+        @apply focus:outline-0 dark:focus:outline-0;
+        @apply border-0 dark:border-0;
+        @apply focus:ring-offset-transparent dark:focus:ring-offset-transparent;
+        @apply focus:ring-transparent dark:focus:ring-transparent;
+        @apply focus-within:ring-0 dark:focus-within:ring-0;
+        @apply focus:shadow-none dark:focus:shadow-none;
+
+        @apply after:absolute before:absolute;
+        @apply after:top-0 before:top-0;
+        @apply after:block before:inline-block;
+        @apply before:rounded-full after:rounded-full;
+
+        @apply after:content-[''] after:w-5 after:h-5 after:mt-0.5 after:ml-0.5;
+        @apply after:shadow-md after:duration-100;
+
+        @apply before:content-[''] before:w-10 before:h-full;
+        @apply before:shadow-[inset_0_0_#000];
+
+        @apply after:bg-white dark:after:bg-gray-50;
+        @apply before:bg-gray-300 dark:before:bg-gray-600;
+        @apply before:checked:bg-[#5B9CFD] dark:before:checked:bg-[#5B9CFD];
+        @apply checked:after:duration-300 checked:after:translate-x-4;
+
+        @apply disabled:after:bg-opacity-75 disabled:cursor-not-allowed;
+        @apply disabled:checked:before:bg-opacity-40;
+    }
+}
+
+.Toastify__toast-body {
+    align-items: start !important;
+}
+.menu-transition {
+    transition: transform 0.3s ease;
+}
+.modal {
+    background: rgba(232, 233, 233, 0.6);
+}
+/* .transition-opacity {
+    transition: opacity 0.5s ease; 
+} */
+.progress-container {
+    width: 100%;
+}
+
+.progress {
+    width: 90%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: white;
+}
+
+.progress::-webkit-progress-value {
+    background-color: #3283fc;
+    transition: width 0.05s linear;
+}
+
+.progress::-moz-progress-bar {
+    background-color: #3283fc;
+    transition: width 0.05s linear;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+:root:has(:is(.modal-open, .modal:target, .modal-toggle:checked + .modal, .modal[open])) {
+    overflow: hidden;
+    z-index: 99 !important;
+    scrollbar-gutter: auto !important;
+}

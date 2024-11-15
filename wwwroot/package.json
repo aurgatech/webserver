@@ -1,0 +1,45 @@
+{
+    "name": "aurga",
+    "private": true,
+    "version": "2.1.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@headlessui/react": "^1.7.19",
+        "axios": "^1.6.8",
+        "crypto-js": "^4.2.0",
+        "framer-motion": "^11.1.7",
+        "js-cookie": "^3.0.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^5.1.0",
+        "react-router-dom": "^6.23.0",
+        "react-switch": "^7.0.0",
+        "react-toastify": "^10.0.5",
+        "react-tooltip": "^5.26.4",
+        "zustand": "^4.5.2"
+    },
+    "devDependencies": {
+        "@types/js-cookie": "^3.0.6",
+        "@types/react": "^18.2.66",
+        "@types/react-dom": "^18.2.22",
+        "@typescript-eslint/eslint-plugin": "^7.2.0",
+        "@typescript-eslint/parser": "^7.2.0",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "autoprefixer": "^10.4.19",
+        "daisyui": "^4.10.2",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.6",
+        "postcss": "^8.4.38",
+        "rimraf": "^5.0.7",
+        "tailwindcss": "^3.4.3",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0"
+    }
+}
